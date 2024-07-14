@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
+
   app: {
     head: {
       title: 'Nuxt3 x GitHub Pages',
@@ -14,13 +15,17 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/svg', href: '/favicon.svg' }
       ]
     },
-    baseURL: '/nuxt3-ghpages/'
+    baseURL: ''
   },
+
   modules: [
   ],
+
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "bootstrap-vue-3/dist/bootstrap-vue-3.css",
     '@/assets/style/main.scss',
-  ]
+  ],
+
+  compatibilityDate: '2024-07-08'
 })
